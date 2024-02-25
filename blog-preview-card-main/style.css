@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: hsl(47, 88%, 63%);
+    
+}
+.container{
+    display: grid;
+    flex-direction: column;
+    padding: 2em 2em 1em;
+    background-color: hsl(0, 0%, 100%);
+    font-size: 10px;
+    gap: 4px;
+    border-radius: 25px;
+    border: 0.05rem solid;
+    /* border-color: black; */
+    box-shadow: 10px 7px 1px black;
+
+}
+.container > *{
+    margin: 0;
+}
+
+.header .headerImg{
+    display: block;
+    max-width: 19rem;
+    border-radius: 5%;
+    
+}
+.user-info{
+    display: grid;
+    margin: 3px;
+    gap: 12px;
+    font-family: 'Figtree', sans-serif;
+    margin-top: 15px;
+
+}
+
+.status{
+    font-family: 'Figtree', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    border: 1px  solid hsl(47, 88%, 63%); 
+    background-color:  hsl(47, 88%, 63%); 
+    border-radius: 10%;
+    width: max-content;
+    padding: .25em 1em;
+    
+}
+
+.date{
+    font-size: 13px;
+}
+
+.title{
+    font-weight: 800;
+}
+
+.description{
+    font-family: 'Figtree', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: hsl(0, 0%, 50%);
+}
+.user-pro{
+    display: flex;
+    margin: 5px;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.user-avatar{
+    max-width: 4em;
+    
+}
+.username{
+    font-family: 'Figtree', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    margin-top: 12px;
+
+}
+
+@media (max-width: 375px){
+    .container{
+        width: 100%;
+    }
+}
